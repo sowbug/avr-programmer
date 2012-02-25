@@ -8,8 +8,8 @@ Introduction
 
 This is a new spin on the AVR ISP. My influences while designing, in no particular order:
 
-  * Adafruit's [USBtinyISP](http://www.ladyada.net/make/usbtinyisp/), based on [the original USBtiny project](http://dicks.home.xs4all.nl/avr/usbtiny/)
-  * Fabio Baltieri's [USB Key AVR Programmer](http://fabiobaltieri.com/2011/09/02/usb-key-avr-programmer/)
+  * Adafruit's [USBtinyISP](http://www.ladyada.net/make/usbtinyisp/), based on [the original USBtiny project](http://dicks.home.xs4all.nl/avr/usbtiny/).
+  * Fabio Baltieri's [USB Key AVR Programmer](http://fabiobaltieri.com/2011/09/02/usb-key-avr-programmer/).
   * [Saleae Logic](http://www.saleae.com/logic). Yes, I know that's not an AVR programmer, but I like their design sensibilities.
   
 Design Goals
