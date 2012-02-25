@@ -3417,7 +3417,7 @@ Source: http://www.osram.convergy.de/</description>
 <instance part="R1" gate="G$1" x="132.08" y="60.96" rot="R270"/>
 <instance part="R2" gate="G$1" x="142.24" y="60.96" rot="R90"/>
 <instance part="P+7" gate="1" x="137.16" y="71.12"/>
-<instance part="SJ1" gate="1" x="-40.64" y="45.72" rot="R180"/>
+<instance part="SJ1" gate="1" x="-40.64" y="45.72"/>
 <instance part="C5" gate="G$1" x="-10.16" y="60.96"/>
 </instances>
 <busses>
@@ -3444,7 +3444,7 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="-48.26" y1="60.96" x2="-35.56" y2="60.96" width="0.1524" layer="91"/>
 <label x="-43.18" y="60.96" size="1.6764" layer="95" font="vector"/>
-<pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="SJ1" gate="1" pin="2"/>
 <wire x1="-35.56" y1="60.96" x2="-35.56" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -3656,7 +3656,7 @@ Source: http://www.osram.convergy.de/</description>
 <wire x1="-48.26" y1="58.42" x2="-45.72" y2="58.42" width="0.1524" layer="91"/>
 <label x="-43.18" y="58.42" size="1.6764" layer="95" font="vector"/>
 <wire x1="-45.72" y1="58.42" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="SJ1" gate="1" pin="2"/>
+<pinref part="SJ1" gate="1" pin="1"/>
 </segment>
 </net>
 <net name="RST" class="0">
