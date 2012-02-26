@@ -3762,13 +3762,6 @@ Source: http://www.osram.convergy.de/</description>
 <pinref part="JP1" gate="A" pin="1"/>
 </segment>
 </net>
-<net name="BUFF-OE" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD4"/>
-<wire x1="114.3" y1="17.78" x2="121.92" y2="17.78" width="0.1524" layer="91"/>
-<label x="121.92" y="17.78" size="1.778" layer="95" font="vector"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>

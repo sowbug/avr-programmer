@@ -805,9 +805,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="16.14" y1="13.97" x2="30.9626" y2="9.15" width="0" layer="19" extent="1-1"/>
 <wire x1="13.97" y1="17.78" x2="16.14" y2="13.97" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="BUFF-OE">
-<contactref element="U1" pad="10"/>
-</signal>
 </signals>
 </board>
 </drawing>
