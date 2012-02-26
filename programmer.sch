@@ -4042,18 +4042,18 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="USB" gate="G$1" x="-12.7" y="111.76"/>
 <instance part="C1" gate="G$1" x="-22.86" y="38.1" rot="R270"/>
 <instance part="C2" gate="G$1" x="-22.86" y="27.94" rot="R270"/>
-<instance part="C3" gate="G$1" x="-25.4" y="68.58" rot="R180"/>
+<instance part="C3" gate="G$1" x="-27.94" y="66.04"/>
 <instance part="ISP" gate="G$1" x="50.8" y="121.92"/>
 <instance part="ISP-RA" gate="G$1" x="50.8" y="106.68"/>
-<instance part="GND2" gate="1" x="-20.32" y="53.34"/>
+<instance part="GND2" gate="1" x="-22.86" y="53.34"/>
 <instance part="GND3" gate="1" x="-27.94" y="10.16"/>
 <instance part="GND5" gate="1" x="71.12" y="99.06"/>
 <instance part="P+1" gate="1" x="71.12" y="127"/>
 <instance part="P+2" gate="1" x="152.4" y="104.14"/>
-<instance part="P+4" gate="1" x="-20.32" y="76.2"/>
-<instance part="R4" gate="G$1" x="-35.56" y="114.3"/>
+<instance part="P+4" gate="1" x="-22.86" y="76.2"/>
+<instance part="R4" gate="G$1" x="-35.56" y="114.3" rot="R180"/>
 <instance part="R5" gate="G$1" x="-30.48" y="119.38" rot="R180"/>
-<instance part="C4" gate="G$1" x="-5.08" y="68.58" rot="MR180"/>
+<instance part="C4" gate="G$1" x="-5.08" y="63.5" rot="MR0"/>
 <instance part="R3" gate="G$1" x="147.32" y="99.06" rot="R180"/>
 <instance part="P+5" gate="G$1" x="-5.08" y="73.66"/>
 <instance part="FRAME1" gate="G$1" x="-73.66" y="-63.5"/>
@@ -4065,7 +4065,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="R1" gate="G$1" x="-27.94" y="-22.86" rot="R90"/>
 <instance part="P+7" gate="1" x="-27.94" y="-12.7"/>
 <instance part="SJ1" gate="1" x="-40.64" y="53.34"/>
-<instance part="C5" gate="G$1" x="-15.24" y="68.58"/>
+<instance part="C5" gate="G$1" x="-17.78" y="68.58"/>
 <instance part="GND1" gate="1" x="-5.08" y="55.88"/>
 <instance part="ISP-SELF" gate="G$1" x="127" y="116.84"/>
 <instance part="IC1" gate="A" x="127" y="63.5"/>
@@ -4124,14 +4124,14 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="+"/>
-<wire x1="-15.24" y1="73.66" x2="-15.24" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-25.4" y1="71.12" x2="-25.4" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="73.66" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="73.66" x2="-17.78" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="71.12" x2="-27.94" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="73.66" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="P+4" gate="1" pin="VCC"/>
-<wire x1="-20.32" y1="73.66" x2="-15.24" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="76.2" x2="-20.32" y2="73.66" width="0.1524" layer="91"/>
-<junction x="-20.32" y="73.66"/>
+<wire x1="-22.86" y1="73.66" x2="-17.78" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="76.2" x2="-22.86" y2="73.66" width="0.1524" layer="91"/>
+<junction x="-22.86" y="73.66"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
@@ -4177,9 +4177,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="25.4" y="17.78" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-5.08" y1="63.5" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="60.96" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP-SELF" gate="G$1" pin="GND"/>
@@ -4204,14 +4204,14 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="-"/>
-<wire x1="-15.24" y1="58.42" x2="-15.24" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-25.4" y1="63.5" x2="-25.4" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="58.42" x2="-20.32" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="58.42" x2="-17.78" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="63.5" x2="-27.94" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-27.94" y1="58.42" x2="-22.86" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="-20.32" y1="58.42" x2="-15.24" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="58.42" x2="-20.32" y2="55.88" width="0.1524" layer="91"/>
-<junction x="-20.32" y="58.42"/>
+<wire x1="-22.86" y1="58.42" x2="-17.78" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="58.42" x2="-22.86" y2="55.88" width="0.1524" layer="91"/>
+<junction x="-22.86" y="58.42"/>
 </segment>
 </net>
 <net name="D+RAW" class="0">
@@ -4220,7 +4220,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <wire x1="-15.24" y1="116.84" x2="-22.86" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="116.84" x2="-22.86" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="114.3" x2="-30.48" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -4277,9 +4277,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
-<wire x1="-5.08" y1="73.66" x2="-5.08" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="68.58" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="UCAP"/>
@@ -4313,7 +4313,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="D+" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-40.64" y1="114.3" x2="-48.26" y2="114.3" width="0.1524" layer="91"/>
 <label x="-48.26" y="114.3" size="1.6764" layer="95" font="vector"/>
 </segment>
