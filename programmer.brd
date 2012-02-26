@@ -123,28 +123,29 @@
 <wire x1="45.72" y1="3.81" x2="45.72" y2="22.86" width="0" layer="20"/>
 <wire x1="45.72" y1="22.86" x2="0" y2="22.86" width="0" layer="20"/>
 <wire x1="0" y1="22.86" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.27" y="1.27" size="1.778" layer="22" font="vector" ratio="18" rot="MR90">sowbug.com</text>
-<text x="24.13" y="8.89" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">MISO 1</text>
+<text x="1.27" y="11.43" size="1.778" layer="22" font="vector" ratio="18" rot="MR90" align="bottom-center">sowbug.com</text>
+<text x="15.24" y="8.89" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">MISO 1</text>
 <text x="13.97" y="8.89" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">2 VCC</text>
-<text x="22.86" y="6.35" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">SCK 3</text>
+<text x="15.24" y="6.35" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">SCK 3</text>
 <text x="13.97" y="6.35" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">4 MOSI</text>
-<text x="22.86" y="3.81" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">RST 5</text>
+<text x="15.24" y="3.81" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">RST 5</text>
 <text x="13.97" y="3.81" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">6 GND</text>
 <circle x="44.958" y="5.969" radius="0.254" width="0.6096" layer="25"/>
 <wire x1="31.4325" y1="22.86" x2="45.72" y2="22.86" width="0.254" layer="21"/>
 <wire x1="45.72" y1="22.86" x2="45.72" y2="14.9225" width="0.254" layer="21"/>
-<wire x1="45.72" y1="14.9225" x2="31.4325" y2="14.9225" width="0.254" layer="21"/>
+<wire x1="45.72" y1="14.9225" x2="31.4325" y2="14.9225" width="0.254" layer="21" style="longdash"/>
 <wire x1="31.4325" y1="14.9225" x2="31.4325" y2="22.86" width="0.254" layer="21"/>
-<text x="24.13" y="17.78" size="0.6" layer="21" ratio="18" rot="R90">VCC</text>
-<text x="26.67" y="17.78" size="0.6" layer="21" ratio="18" rot="R90">GND</text>
-<text x="29.21" y="17.78" size="0.6" layer="21" ratio="18" rot="R90">3V3</text>
-<text x="21.59" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">VCC</text>
-<text x="24.13" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">GND</text>
-<text x="26.67" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">TCK</text>
-<text x="29.21" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">TDO</text>
-<text x="31.75" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">TDI</text>
-<text x="34.29" y="3.175" size="0.6" layer="21" ratio="18" rot="R90">TMS</text>
-<text x="33.02" y="7.62" size="0.4064" layer="21" ratio="18">74AHC125</text>
+<text x="24.13" y="17.78" size="0.6" layer="21" font="vector" ratio="18" rot="R90">VCC</text>
+<text x="26.67" y="17.78" size="0.6" layer="21" font="vector" ratio="18" rot="R90">GND</text>
+<text x="29.21" y="17.78" size="0.6" layer="21" font="vector" ratio="18" rot="R90">3V3</text>
+<text x="21.59" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">VCC</text>
+<text x="24.13" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">GND</text>
+<text x="26.67" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">TCK</text>
+<text x="29.21" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">TDO</text>
+<text x="31.75" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">TDI</text>
+<text x="34.29" y="3.175" size="0.6" layer="21" font="vector" ratio="18" rot="R90">TMS</text>
+<text x="33.02" y="7.62" size="0.4064" layer="21" font="vector" ratio="18">74AHC125</text>
+<text x="19.05" y="1.27" size="1.778" layer="22" font="vector" rot="MR0">v1.0.0</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -747,97 +748,96 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="U1" library="SparkFun" package="TQFP32-08" value="ATMEGA8U2" x="24.13" y="11.43" smashed="yes">
-<attribute name="NAME" x="21.59" y="12.7" size="0.6" layer="25"/>
-<attribute name="VALUE" x="21.59" y="10.16" size="0.6" layer="27"/>
+<attribute name="NAME" x="21.59" y="12.7" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="21.59" y="10.16" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="USB" library="SparkFun" package="USB-MINIB" value="USB-MINIB-5PIN" x="5.08" y="11.43" smashed="yes">
-<attribute name="NAME" x="1.27" y="12.7" size="0.6" layer="25"/>
-<attribute name="VALUE" x="0.635" y="10.16" size="0.6" layer="27"/>
+<attribute name="NAME" x="1.27" y="12.7" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="0.635" y="10.16" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="C1" library="SparkFun" package="0805" value="22 pF" x="13.97" y="6.985" smashed="yes">
-<attribute name="NAME" x="11.303" y="7.1755" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="6.223" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="7.1755" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="6.223" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="C2" library="SparkFun" package="0805" value="22 pF" x="13.97" y="5.08" smashed="yes">
-<attribute name="NAME" x="11.303" y="5.2705" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="4.318" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="5.2705" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="4.318" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="C3" library="SparkFun" package="0805" value="0.1 uF" x="13.97" y="3.175" smashed="yes">
-<attribute name="NAME" x="11.303" y="3.3655" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="2.413" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="3.3655" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="2.413" size="0.6" layer="27" font="vector"/>
 </element>
-<element name="ISP-TARGET" library="adafruit" package="AVRISP" value="AVRISP-6" x="38.735" y="19.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="41.783" y="16.002" size="0.6" layer="25" rot="R180"/>
+<element name="ISP" library="adafruit" package="AVRISP" value="AVRISP-6" x="38.735" y="19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="41.783" y="16.002" size="0.6" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="ISP-TARGET-RA" library="adafruit" package="AVRISP" value="AVRISP-6" x="41.656" y="4.064" smashed="yes" rot="MR45">
-<attribute name="NAME" x="38.481" y="6.103475" size="0.6" layer="25" rot="R180"/>
+<element name="ISP-RA" library="adafruit" package="AVRISP" value="AVRISP-6" x="41.656" y="4.064" smashed="yes" rot="MR45">
+<attribute name="NAME" x="44.831" y="9.278475" size="0.6" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R4" library="SparkFun" package="0805" value="22" x="13.97" y="15.875" smashed="yes">
-<attribute name="NAME" x="11.303" y="16.0655" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="15.113" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="16.0655" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="15.113" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="R5" library="SparkFun" package="0805" value="22" x="13.97" y="13.97" smashed="yes">
-<attribute name="NAME" x="11.303" y="14.1605" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="13.208" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="14.1605" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="13.208" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="C4" library="SparkFun" package="0805" value="1 uF" x="13.97" y="1.27" smashed="yes">
-<attribute name="NAME" x="11.303" y="1.4605" size="0.6" layer="25"/>
-<attribute name="VALUE" x="15.494" y="0.508" size="0.6" layer="27"/>
+<attribute name="NAME" x="11.303" y="1.4605" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="15.494" y="0.508" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="R3" library="SparkFun" package="0805" value="10K" x="10.795" y="19.685" smashed="yes" rot="R90">
-<attribute name="NAME" x="10.6045" y="17.018" size="0.6" layer="25" rot="R90"/>
-<attribute name="VALUE" x="11.557" y="21.209" size="0.6" layer="27" rot="R90"/>
+<attribute name="NAME" x="10.6045" y="17.018" size="0.6" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="11.557" y="21.209" size="0.6" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="X1" library="adafruit" package="NX8045" value="16MHz" x="5.08" y="3.175" smashed="yes">
 <attribute name="NAME" x="4.285" y="3.435" size="0.6" layer="25" font="vector" ratio="18"/>
 <attribute name="VALUE" x="3.785" y="2.45" size="0.6" layer="27" font="vector" ratio="18"/>
 </element>
-<element name="JP2" library="SparkFun" package="1X02" value="VCC-5V" x="2.54" y="19.05" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.7112" y="17.0688" size="0.6" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="0.635" y="19.685" size="0.6" layer="27" rot="R90"/>
+<element name="JP1" library="SparkFun" package="1X02" value="VCC-5V" x="2.54" y="19.05" smashed="yes" rot="R90">
+<attribute name="NAME" x="0.7112" y="17.0688" size="0.6" layer="25" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="D1" library="adafruit" package="1206" value="LED" x="42.545" y="13.335" smashed="yes">
-<attribute name="NAME" x="38.735" y="13.97" size="0.6" layer="25"/>
-<attribute name="VALUE" x="43.815" y="11.43" size="0.6" layer="27"/>
+<attribute name="NAME" x="38.735" y="13.97" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="43.815" y="11.43" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="R1" library="SparkFun" package="0805" value="1K" x="42.545" y="10.795" smashed="yes">
-<attribute name="NAME" x="39.878" y="10.9855" size="0.6" layer="25"/>
-<attribute name="VALUE" x="44.069" y="10.033" size="0.6" layer="27"/>
+<attribute name="NAME" x="39.878" y="10.9855" size="0.6" layer="25" font="vector"/>
+<attribute name="VALUE" x="44.069" y="10.033" size="0.6" layer="27" font="vector"/>
 </element>
 <element name="SJ1" library="jumper" package="SJ" value="VCC-5V" x="5.715" y="19.685" smashed="yes" rot="R90">
-<attribute name="NAME" x="4.572" y="16.764" size="0.6" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="7.62" y="19.4501" size="0.6" layer="27" rot="R90"/>
+<attribute name="NAME" x="4.572" y="16.764" size="0.6" layer="25" font="vector" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="7.62" y="19.4501" size="0.6" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C5" library="SparkFun" package="EIA3216" value="10 uF" x="13.97" y="10.795" smashed="yes" rot="R180">
-<attribute name="NAME" x="16.51" y="9.414" size="0.6" layer="25" rot="R180"/>
-<attribute name="VALUE" x="13.562" y="9.463" size="0.6" layer="27" rot="R180"/>
+<attribute name="NAME" x="16.51" y="9.414" size="0.6" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="13.562" y="9.463" size="0.6" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="ISP-SELF" library="adafruit" package="AVRISP" value="AVRISP-6" x="16.51" y="20.32" smashed="yes" rot="R90">
-<attribute name="NAME" x="19.558" y="17.272" size="0.6" layer="25" rot="R180"/>
+<attribute name="NAME" x="19.558" y="17.272" size="0.6" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="IC1" library="74xx-us" package="SSOP14" value="74ABT125DB" x="34.29" y="10.16" smashed="yes" rot="R270">
-<attribute name="NAME" x="31.115" y="13.97" size="0.6" layer="25"/>
+<attribute name="NAME" x="31.115" y="13.97" size="0.6" layer="25" font="vector"/>
 </element>
-<element name="JP1" library="adafruit" package="1X06" value="JTAG" x="27.94" y="1.27" smashed="yes"/>
+<element name="JP2" library="adafruit" package="1X06" value="JTAG" x="27.94" y="1.27" smashed="yes"/>
 <element name="JP3" library="adafruit" package="1X03" value="POWER" x="26.67" y="21.59" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VCC">
-<contactref element="ISP-TARGET-RA" pad="2"/>
-<contactref element="JP2" pad="2"/>
+<contactref element="ISP-RA" pad="2"/>
+<contactref element="JP1" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="32"/>
 <contactref element="SJ1" pad="2"/>
 <contactref element="R3" pad="1"/>
 <contactref element="ISP-SELF" pad="2"/>
-<contactref element="ISP-TARGET" pad="2"/>
-<contactref element="ISP-TARGET" pad="2"/>
+<contactref element="ISP" pad="2"/>
+<contactref element="ISP" pad="2"/>
 <contactref element="R1" pad="2"/>
 <contactref element="IC1" pad="14"/>
 <contactref element="C5" pad="A"/>
 <contactref element="C3" pad="2"/>
 <contactref element="JP3" pad="1"/>
-<contactref element="JP1" pad="1"/>
+<contactref element="JP2" pad="1"/>
 <wire x1="37.765" y1="12.11" x2="36.195" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="43.445" y1="10.795" x2="37.765" y2="12.11" width="0" layer="19" extent="1-1"/>
 <wire x1="42.554028125" y1="6.758075" x2="43.445" y2="10.795" width="0" layer="19" extent="1-1"/>
@@ -856,15 +856,15 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
 <contactref element="USB" pad="GND"/>
-<contactref element="ISP-TARGET" pad="6"/>
+<contactref element="ISP" pad="6"/>
 <contactref element="U1" pad="28"/>
 <contactref element="U1" pad="3"/>
 <contactref element="C4" pad="1"/>
 <contactref element="ISP-SELF" pad="6"/>
-<contactref element="ISP-TARGET-RA" pad="6"/>
-<contactref element="ISP-TARGET-RA" pad="6"/>
+<contactref element="ISP-RA" pad="6"/>
+<contactref element="ISP-RA" pad="6"/>
 <contactref element="IC1" pad="7"/>
-<contactref element="JP1" pad="2"/>
+<contactref element="JP2" pad="2"/>
 <contactref element="JP3" pad="2"/>
 <contactref element="C5" pad="C"/>
 <contactref element="C3" pad="1"/>
@@ -902,10 +902,10 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.38" y1="3.175" x2="13.07" y2="5.08" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
-<contactref element="ISP-TARGET" pad="3"/>
-<contactref element="ISP-TARGET-RA" pad="3"/>
+<contactref element="ISP" pad="3"/>
+<contactref element="ISP-RA" pad="3"/>
 <contactref element="IC1" pad="3"/>
-<contactref element="JP1" pad="3"/>
+<contactref element="JP2" pad="3"/>
 <wire x1="30.815" y1="10.81" x2="38.735" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="1.27" x2="30.815" y2="10.81" width="0" layer="19" extent="1-1"/>
 <wire x1="42.554028125" y1="3.165971875" x2="30.815" y2="10.81" width="0" layer="19" extent="1-1"/>
@@ -917,7 +917,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="25.33" y1="15.7226" x2="29.21" y2="21.59" width="0" layer="19" extent="1-1"/>
 <wire x1="14.87" y1="1.27" x2="25.33" y2="15.7226" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$2">
+<signal name="D-RAW">
 <contactref element="USB" pad="D-"/>
 <contactref element="R5" pad="1"/>
 <wire x1="7.58" y1="12.23" x2="13.07" y2="13.97" width="0" layer="19" extent="1-1"/>
@@ -935,15 +935,15 @@ Please make sure your boards conform to these design rules.</description>
 <signal name="5V">
 <contactref element="U1" pad="31"/>
 <contactref element="USB" pad="VBUS"/>
-<contactref element="JP2" pad="1"/>
+<contactref element="JP1" pad="1"/>
 <contactref element="SJ1" pad="1"/>
 <wire x1="7.58" y1="13.03" x2="22.13" y2="15.7226" width="0" layer="19" extent="1-1"/>
 <wire x1="5.715" y1="18.923" x2="7.58" y2="13.03" width="0" layer="19" extent="1-1"/>
 <wire x1="2.54" y1="19.05" x2="5.715" y2="18.923" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RST">
-<contactref element="ISP-TARGET" pad="5"/>
-<contactref element="ISP-TARGET-RA" pad="5"/>
+<contactref element="ISP" pad="5"/>
+<contactref element="ISP-RA" pad="5"/>
 <contactref element="U1" pad="18"/>
 <contactref element="IC1" pad="6"/>
 <wire x1="30.815" y1="8.86" x2="41.275" y2="17.78" width="0" layer="19" extent="1-1"/>
@@ -951,24 +951,24 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="40.757975" y1="1.369921875" x2="30.815" y2="8.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MISO">
-<contactref element="ISP-TARGET-RA" pad="1"/>
-<contactref element="ISP-TARGET" pad="1"/>
+<contactref element="ISP-RA" pad="1"/>
+<contactref element="ISP" pad="1"/>
 <contactref element="IC1" pad="12"/>
-<contactref element="JP1" pad="4"/>
+<contactref element="JP2" pad="4"/>
 <wire x1="37.765" y1="10.81" x2="36.195" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="44.350078125" y1="4.962025" x2="37.765" y2="10.81" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="1.27" x2="37.765" y2="10.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
-<contactref element="ISP-TARGET" pad="4"/>
-<contactref element="ISP-TARGET-RA" pad="4"/>
+<contactref element="ISP" pad="4"/>
+<contactref element="ISP-RA" pad="4"/>
 <contactref element="IC1" pad="8"/>
-<contactref element="JP1" pad="5"/>
+<contactref element="JP2" pad="5"/>
 <wire x1="37.765" y1="8.21" x2="38.735" y2="20.32" width="0" layer="19" extent="1-1"/>
 <wire x1="40.757975" y1="4.962025" x2="37.765" y2="8.21" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="1.27" x2="37.765" y2="8.21" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$3">
+<signal name="VCC-LED">
 <contactref element="R1" pad="1"/>
 <contactref element="D1" pad="A"/>
 <wire x1="41.645" y1="10.795" x2="41.123" y2="13.335" width="0" layer="19" extent="1-1"/>
@@ -1023,7 +1023,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="28.4226" y1="11.03" x2="30.815" y2="10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB0">
-<contactref element="JP1" pad="6"/>
+<contactref element="JP2" pad="6"/>
 <contactref element="U1" pad="14"/>
 <wire x1="25.33" y1="7.1374" x2="34.29" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>

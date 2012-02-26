@@ -3964,8 +3964,8 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="22 pF"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="22 pF"/>
 <part name="C3" library="SparkFun" deviceset="CAP" device="0805" value="0.1 uF"/>
-<part name="ISP-TARGET" library="adafruit" deviceset="AVRISP" device="-6"/>
-<part name="ISP-TARGET-RA" library="adafruit" deviceset="AVRISP" device="-6"/>
+<part name="ISP" library="adafruit" deviceset="AVRISP" device="-6"/>
+<part name="ISP-RA" library="adafruit" deviceset="AVRISP" device="-6"/>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun" deviceset="GND" device=""/>
@@ -3980,7 +3980,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="SHEET1"/>
 <part name="X1" library="adafruit" deviceset="XTAL" device="NX8045" value="16MHz"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="JP2" library="SparkFun" deviceset="JUMPER-2" device="PTH" value="VCC-5V"/>
+<part name="JP1" library="SparkFun" deviceset="JUMPER-2" device="PTH" value="VCC-5V"/>
 <part name="D1" library="adafruit" deviceset="LED" device="SMT1206" value="LED"/>
 <part name="R1" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="P+7" library="SparkFun" deviceset="VCC" device=""/>
@@ -3989,7 +3989,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="ISP-SELF" library="adafruit" deviceset="AVRISP" device="-6"/>
 <part name="IC1" library="74xx-us" deviceset="74*125" device="DB" technology="ABT"/>
-<part name="JP1" library="adafruit" deviceset="PINHD-1X6" device="" value="JTAG"/>
+<part name="JP2" library="adafruit" deviceset="PINHD-1X6" device="" value="JTAG"/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X3" device="" value="POWER"/>
 </parts>
 <sheets>
@@ -4043,8 +4043,8 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="C1" gate="G$1" x="-22.86" y="38.1" rot="R270"/>
 <instance part="C2" gate="G$1" x="-22.86" y="27.94" rot="R270"/>
 <instance part="C3" gate="G$1" x="-25.4" y="68.58" rot="R180"/>
-<instance part="ISP-TARGET" gate="G$1" x="50.8" y="121.92"/>
-<instance part="ISP-TARGET-RA" gate="G$1" x="50.8" y="106.68"/>
+<instance part="ISP" gate="G$1" x="50.8" y="121.92"/>
+<instance part="ISP-RA" gate="G$1" x="50.8" y="106.68"/>
 <instance part="GND2" gate="1" x="-20.32" y="53.34"/>
 <instance part="GND3" gate="1" x="-27.94" y="10.16"/>
 <instance part="GND5" gate="1" x="71.12" y="99.06"/>
@@ -4060,7 +4060,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="FRAME1" gate="G$2" x="99.06" y="-63.5"/>
 <instance part="X1" gate="G$1" x="-10.16" y="33.02" rot="R90"/>
 <instance part="GND6" gate="1" x="-22.86" y="99.06"/>
-<instance part="JP2" gate="A" x="-50.8" y="66.04" rot="R90"/>
+<instance part="JP1" gate="A" x="-50.8" y="66.04" rot="R90"/>
 <instance part="D1" gate="G$1" x="-27.94" y="-33.02"/>
 <instance part="R1" gate="G$1" x="-27.94" y="-22.86" rot="R90"/>
 <instance part="P+7" gate="1" x="-27.94" y="-12.7"/>
@@ -4072,7 +4072,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="IC1" gate="B" x="127" y="43.18"/>
 <instance part="IC1" gate="C" x="127" y="22.86"/>
 <instance part="IC1" gate="D" x="127" y="2.54"/>
-<instance part="JP1" gate="A" x="83.82" y="-25.4"/>
+<instance part="JP2" gate="A" x="83.82" y="-25.4"/>
 <instance part="JP3" gate="A" x="40.64" y="-30.48"/>
 </instances>
 <busses>
@@ -4080,12 +4080,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="VCC"/>
+<pinref part="ISP-RA" gate="G$1" pin="VCC"/>
 <wire x1="66.04" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
 <label x="71.12" y="109.22" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="JP1" gate="A" pin="2"/>
 <wire x1="-48.26" y1="68.58" x2="-35.56" y2="68.58" width="0.1524" layer="91"/>
 <label x="-45.72" y="68.58" size="1.6764" layer="95" font="vector"/>
 <pinref part="SJ1" gate="1" pin="2"/>
@@ -4114,7 +4114,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <segment>
 <pinref part="P+1" gate="1" pin="VCC"/>
 <wire x1="71.12" y1="127" x2="71.12" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="ISP-TARGET" gate="G$1" pin="VCC"/>
+<pinref part="ISP" gate="G$1" pin="VCC"/>
 <wire x1="71.12" y1="124.46" x2="66.04" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -4139,7 +4139,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="25.4" y="-27.94" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="JP2" gate="A" pin="1"/>
 <wire x1="81.28" y1="-17.78" x2="68.58" y2="-17.78" width="0.1524" layer="91"/>
 <label x="68.58" y="-17.78" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -4162,7 +4162,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <wire x1="-22.86" y1="111.76" x2="-22.86" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="ISP-TARGET" gate="G$1" pin="GND"/>
+<pinref part="ISP" gate="G$1" pin="GND"/>
 <wire x1="66.04" y1="119.38" x2="71.12" y2="119.38" width="0.1524" layer="91"/>
 <label x="71.12" y="119.38" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4189,11 +4189,11 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="71.12" y1="101.6" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="GND"/>
+<pinref part="ISP-RA" gate="G$1" pin="GND"/>
 <wire x1="71.12" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="JP2" gate="A" pin="2"/>
 <wire x1="81.28" y1="-20.32" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
 <label x="68.58" y="-20.32" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -4255,12 +4255,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="SCK" class="0">
 <segment>
-<pinref part="ISP-TARGET" gate="G$1" pin="SCK"/>
+<pinref part="ISP" gate="G$1" pin="SCK"/>
 <wire x1="38.1" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="33.02" y="121.92" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="SCK"/>
+<pinref part="ISP-RA" gate="G$1" pin="SCK"/>
 <wire x1="38.1" y1="106.68" x2="33.02" y2="106.68" width="0.1524" layer="91"/>
 <label x="33.02" y="106.68" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4270,7 +4270,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="142.24" y="63.5" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="JP2" gate="A" pin="3"/>
 <wire x1="81.28" y1="-22.86" x2="68.58" y2="-22.86" width="0.1524" layer="91"/>
 <label x="68.58" y="-22.86" size="1.778" layer="95" font="vector"/>
 </segment>
@@ -4292,7 +4292,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="25.4" y="-33.02" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="D-RAW" class="0">
 <segment>
 <pinref part="USB" gate="G$1" pin="D-"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -4336,7 +4336,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="-22.86" y="129.54" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="JP1" gate="A" pin="1"/>
 <wire x1="-48.26" y1="66.04" x2="-45.72" y2="66.04" width="0.1524" layer="91"/>
 <label x="-45.72" y="66.04" size="1.6764" layer="95" font="vector"/>
 <wire x1="-45.72" y1="66.04" x2="-45.72" y2="53.34" width="0.1524" layer="91"/>
@@ -4345,12 +4345,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="RST" class="0">
 <segment>
-<pinref part="ISP-TARGET" gate="G$1" pin="RST"/>
+<pinref part="ISP" gate="G$1" pin="RST"/>
 <wire x1="38.1" y1="119.38" x2="33.02" y2="119.38" width="0.1524" layer="91"/>
 <label x="33.02" y="119.38" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="RST"/>
+<pinref part="ISP-RA" gate="G$1" pin="RST"/>
 <wire x1="38.1" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
 <label x="33.02" y="104.14" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4367,12 +4367,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="MISO" class="0">
 <segment>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="MISO"/>
+<pinref part="ISP-RA" gate="G$1" pin="MISO"/>
 <wire x1="38.1" y1="109.22" x2="33.02" y2="109.22" width="0.1524" layer="91"/>
 <label x="33.02" y="109.22" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="ISP-TARGET" gate="G$1" pin="MISO"/>
+<pinref part="ISP" gate="G$1" pin="MISO"/>
 <wire x1="38.1" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <label x="33.02" y="124.46" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4382,19 +4382,19 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="104.14" y="2.54" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="JP2" gate="A" pin="4"/>
 <wire x1="81.28" y1="-25.4" x2="68.58" y2="-25.4" width="0.1524" layer="91"/>
 <label x="68.58" y="-25.4" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
 <segment>
-<pinref part="ISP-TARGET" gate="G$1" pin="MOSI"/>
+<pinref part="ISP" gate="G$1" pin="MOSI"/>
 <wire x1="66.04" y1="121.92" x2="71.12" y2="121.92" width="0.1524" layer="91"/>
 <label x="71.12" y="121.92" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="ISP-TARGET-RA" gate="G$1" pin="MOSI"/>
+<pinref part="ISP-RA" gate="G$1" pin="MOSI"/>
 <wire x1="66.04" y1="106.68" x2="71.12" y2="106.68" width="0.1524" layer="91"/>
 <label x="71.12" y="106.68" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4404,12 +4404,12 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="142.24" y="22.86" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="JP2" gate="A" pin="5"/>
 <wire x1="81.28" y1="-27.94" x2="68.58" y2="-27.94" width="0.1524" layer="91"/>
 <label x="68.58" y="-27.94" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="VCC-LED" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="D1" gate="G$1" pin="A"/>
@@ -4531,7 +4531,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="PB0" class="0">
 <segment>
-<pinref part="JP1" gate="A" pin="6"/>
+<pinref part="JP2" gate="A" pin="6"/>
 <wire x1="81.28" y1="-30.48" x2="68.58" y2="-30.48" width="0.1524" layer="91"/>
 <label x="68.58" y="-30.48" size="1.778" layer="95" font="vector"/>
 </segment>
