@@ -3959,7 +3959,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="U1" library="SparkFun" deviceset="ATMEGA8U2" device="AU"/>
+<part name="U1" library="SparkFun" deviceset="ATMEGA8U2" device="AU" value="ATMEGA8U2"/>
 <part name="USB" library="SparkFun" deviceset="USB-MINIB" device="-5PIN"/>
 <part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="22 pF"/>
 <part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="22 pF"/>
