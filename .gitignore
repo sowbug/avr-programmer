@@ -1,0 +1,8 @@
+*.b#*
+*.s#*
+*.ger
+*.gpi
+*.dri
+*.xln
+*.pro
+eagle.epf
