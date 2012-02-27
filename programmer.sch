@@ -3973,9 +3973,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="R4" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22"/>
-<part name="R5" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22"/>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22"/>
 <part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="1 uF"/>
-<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="SHEET1"/>
 <part name="X1" library="adafruit" deviceset="XTAL" device="NX8045" value="16MHz"/>
@@ -4052,9 +4052,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="P+2" gate="1" x="152.4" y="104.14"/>
 <instance part="P+4" gate="1" x="-22.86" y="76.2"/>
 <instance part="R4" gate="G$1" x="-35.56" y="114.3" rot="R180"/>
-<instance part="R5" gate="G$1" x="-30.48" y="119.38" rot="R180"/>
+<instance part="R3" gate="G$1" x="-30.48" y="119.38" rot="R180"/>
 <instance part="C4" gate="G$1" x="-5.08" y="63.5" rot="MR0"/>
-<instance part="R3" gate="G$1" x="147.32" y="99.06" rot="R180"/>
+<instance part="R2" gate="G$1" x="147.32" y="99.06" rot="R180"/>
 <instance part="P+5" gate="G$1" x="-5.08" y="73.66"/>
 <instance part="FRAME1" gate="G$1" x="-73.66" y="-63.5"/>
 <instance part="FRAME1" gate="G$2" x="99.06" y="-63.5"/>
@@ -4102,7 +4102,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="27.94" y="66.04" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="P+2" gate="1" pin="VCC"/>
 <wire x1="152.4" y1="99.06" x2="152.4" y2="104.14" width="0.1524" layer="91"/>
 </segment>
@@ -4295,13 +4295,13 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <net name="D-RAW" class="0">
 <segment>
 <pinref part="USB" gate="G$1" pin="D-"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-15.24" y1="119.38" x2="-25.4" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="D-" class="0">
 <segment>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="-35.56" y1="119.38" x2="-48.26" y2="119.38" width="0.1524" layer="91"/>
 <label x="-48.26" y="119.38" size="1.6764" layer="95" font="vector"/>
 </segment>
@@ -4423,7 +4423,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="22.86" y="73.66" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <label x="129.54" y="99.06" size="1.778" layer="95" font="vector"/>
 <wire x1="142.24" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
 <junction x="142.24" y="99.06"/>
