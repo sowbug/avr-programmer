@@ -4053,7 +4053,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <instance part="P+4" gate="1" x="-22.86" y="76.2"/>
 <instance part="R4" gate="G$1" x="-35.56" y="114.3" rot="R180"/>
 <instance part="R3" gate="G$1" x="-30.48" y="119.38" rot="R180"/>
-<instance part="C4" gate="G$1" x="-5.08" y="63.5" rot="MR0"/>
+<instance part="C4" gate="G$1" x="-5.08" y="68.58" rot="MR180"/>
 <instance part="R2" gate="G$1" x="147.32" y="99.06" rot="R180"/>
 <instance part="P+5" gate="G$1" x="-5.08" y="73.66"/>
 <instance part="FRAME1" gate="G$1" x="-73.66" y="-63.5"/>
@@ -4177,9 +4177,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="25.4" y="17.78" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="C4" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="-5.08" y1="60.96" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="63.5" x2="-5.08" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ISP-SELF" gate="G$1" pin="GND"/>
@@ -4277,9 +4277,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="3.3V" class="0">
 <segment>
-<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 <pinref part="P+5" gate="G$1" pin="3.3V"/>
-<wire x1="-5.08" y1="68.58" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="71.12" x2="-5.08" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="UCAP"/>
