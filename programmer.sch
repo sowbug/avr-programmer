@@ -3957,6 +3957,8 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="pwr/gnd" width="0" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="SparkFun" deviceset="ATMEGA8U2" device="AU" value="ATMEGA8U2"/>
@@ -3974,7 +3976,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <part name="P+4" library="SparkFun" deviceset="VCC" device=""/>
 <part name="R4" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22"/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="22"/>
-<part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="1 uF"/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="1uF"/>
 <part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="SHEET1"/>
@@ -4078,7 +4080,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <busses>
 </busses>
 <nets>
-<net name="VCC" class="0">
+<net name="VCC" class="1">
 <segment>
 <pinref part="ISP-RA" gate="G$1" pin="VCC"/>
 <wire x1="66.04" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
@@ -4144,7 +4146,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="68.58" y="-17.78" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -4323,7 +4325,7 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="27.94" y="55.88" size="1.6764" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="5V" class="0">
+<net name="5V" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="UVCC"/>
 <wire x1="27.94" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
@@ -4441,14 +4443,14 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="LED" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="PB7"/>
-<wire x1="73.66" y1="55.88" x2="81.28" y2="55.88" width="0.1524" layer="91"/>
-<label x="81.28" y="55.88" size="1.778" layer="95" font="vector"/>
-</segment>
-<segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-27.94" y1="-43.18" x2="-27.94" y2="-38.1" width="0.1524" layer="91"/>
 <label x="-33.02" y="-43.18" size="1.6764" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD5"/>
+<wire x1="73.66" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
+<label x="81.28" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK-UC" class="0">
@@ -4544,6 +4546,14 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="205,1,66.04,121.92,MOSI,,,,,"/>
+<approved hash="205,1,66.04,106.68,MOSI,,,,,"/>
+<approved hash="205,1,38.1,119.38,RST,,,,,"/>
+<approved hash="205,1,38.1,104.14,RST,,,,,"/>
+<approved hash="205,1,38.1,121.92,SCK,,,,,"/>
+<approved hash="205,1,38.1,106.68,SCK,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
