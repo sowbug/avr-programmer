@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -948,6 +948,20 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="33.9725" y1="3.4925" x2="33.9725" y2="6.985" width="0.1524" layer="1"/>
 <wire x1="31.75" y1="9.2075" x2="31.7133" y2="9.3526" width="0.1524" layer="1"/>
 <wire x1="33.9725" y1="3.4925" x2="34.085425" y2="3.406571875" width="0.1524" layer="1"/>
+<polygon width="0.254" layer="1" isolate="0.4064">
+<vertex x="-1.27" y="24.13"/>
+<vertex x="41.91" y="24.13"/>
+<vertex x="41.91" y="-1.27"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
+<polygon width="0.254" layer="16" isolate="0.4064">
+<vertex x="0" y="23.495"/>
+<vertex x="41.275" y="23.495"/>
+<vertex x="41.275" y="4.445"/>
+<vertex x="41.275" y="-0.635"/>
+<vertex x="-0.635" y="-0.635"/>
+<vertex x="-0.635" y="23.495"/>
+</polygon>
 </signal>
 <signal name="D+RAW">
 <contactref element="USB" pad="D+"/>
