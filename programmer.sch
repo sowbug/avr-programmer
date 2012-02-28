@@ -4486,6 +4486,11 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <wire x1="137.16" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
 <label x="142.24" y="43.18" size="1.778" layer="95" font="vector"/>
 </segment>
+<segment>
+<pinref part="JP2" gate="A" pin="6"/>
+<wire x1="71.12" y1="-35.56" x2="58.42" y2="-35.56" width="0.1524" layer="91"/>
+<label x="58.42" y="-35.56" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MISO" class="0">
 <segment>
@@ -4649,18 +4654,6 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="IC1" gate="D" pin="OE"/>
 <wire x1="127" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="132.08" y="12.7" size="1.778" layer="95" font="vector"/>
-</segment>
-</net>
-<net name="PB0" class="0">
-<segment>
-<pinref part="JP2" gate="A" pin="6"/>
-<wire x1="71.12" y1="-35.56" x2="58.42" y2="-35.56" width="0.1524" layer="91"/>
-<label x="58.42" y="-35.56" size="1.778" layer="95" font="vector"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="PB0"/>
-<wire x1="73.66" y1="73.66" x2="81.28" y2="73.66" width="0.1524" layer="91"/>
-<label x="81.28" y="73.66" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 </nets>
