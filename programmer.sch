@@ -4477,11 +4477,6 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="33.02" y="104.14" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="PB4"/>
-<wire x1="73.66" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
-<label x="81.28" y="63.5" size="1.6764" layer="95" font="vector"/>
-</segment>
-<segment>
 <pinref part="IC1" gate="B" pin="O"/>
 <wire x1="137.16" y1="43.18" x2="154.94" y2="43.18" width="0.1524" layer="91"/>
 <label x="142.24" y="43.18" size="1.778" layer="95" font="vector"/>
@@ -4545,20 +4540,9 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 </net>
 <net name="RST-UC" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="RESET/PC1"/>
-<wire x1="33.02" y1="73.66" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
-<label x="22.86" y="73.66" size="1.6764" layer="95" font="vector"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<label x="129.54" y="99.06" size="1.778" layer="95" font="vector"/>
-<wire x1="142.24" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
-<junction x="142.24" y="99.06"/>
-</segment>
-<segment>
-<pinref part="ISP-SELF" gate="G$1" pin="RST"/>
-<wire x1="114.3" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
-<label x="104.14" y="114.3" size="1.778" layer="95" font="vector"/>
+<pinref part="U1" gate="G$1" pin="PB4"/>
+<wire x1="73.66" y1="63.5" x2="81.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="81.28" y="63.5" size="1.778" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="B" pin="I"/>
@@ -4566,16 +4550,16 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <label x="104.14" y="43.18" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
-<net name="LED" class="0">
+<net name="ACTIVITY" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-27.94" y1="-43.18" x2="-27.94" y2="-38.1" width="0.1524" layer="91"/>
-<label x="-33.02" y="-43.18" size="1.6764" layer="95" font="vector"/>
+<label x="-27.94" y="-43.18" size="1.6764" layer="95" font="vector"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD5"/>
 <wire x1="73.66" y1="22.86" x2="81.28" y2="22.86" width="0.1524" layer="91"/>
-<label x="81.28" y="22.86" size="1.778" layer="95"/>
+<label x="81.28" y="22.86" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 <net name="SCK-UC" class="0">
@@ -4654,6 +4638,24 @@ Source: http://www.nxp.com/documents/data_sheet/74ABT125.pdf</description>
 <pinref part="IC1" gate="D" pin="OE"/>
 <wire x1="127" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
 <label x="132.08" y="12.7" size="1.778" layer="95" font="vector"/>
+</segment>
+</net>
+<net name="RESET" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<label x="129.54" y="99.06" size="1.778" layer="95" font="vector"/>
+<wire x1="142.24" y1="99.06" x2="134.62" y2="99.06" width="0.1524" layer="91"/>
+<junction x="142.24" y="99.06"/>
+</segment>
+<segment>
+<pinref part="ISP-SELF" gate="G$1" pin="RST"/>
+<wire x1="114.3" y1="114.3" x2="104.14" y2="114.3" width="0.1524" layer="91"/>
+<label x="104.14" y="114.3" size="1.778" layer="95" font="vector"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="RESET/PC1"/>
+<wire x1="33.02" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="25.4" y="73.66" size="1.778" layer="95" font="vector"/>
 </segment>
 </net>
 </nets>
