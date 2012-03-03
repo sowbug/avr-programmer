@@ -904,9 +904,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.3902" y1="19.1624" x2="13.9079" y2="20.6801" width="0.1524" layer="16"/>
 <wire x1="13.9079" y1="20.6801" x2="21.0325" y2="20.6801" width="0.1524" layer="16"/>
 <wire x1="21.0325" y1="20.6801" x2="22.5502" y2="19.1624" width="0.1524" layer="16"/>
-<wire x1="15.6981" y1="1.8281" x2="16.9995" y2="0.5267" width="0.1524" layer="16"/>
-<wire x1="16.9995" y1="0.5267" x2="25.2758" y2="0.5267" width="0.1524" layer="16"/>
-<wire x1="25.2758" y1="0.5267" x2="27.8798" y2="3.1307" width="0.1524" layer="16"/>
+<wire x1="15.6981" y1="1.8281" x2="16.9995" y2="0.49368125" width="0.1524" layer="16"/>
+<wire x1="16.9995" y1="0.49368125" x2="25.2758" y2="0.49368125" width="0.2159" layer="16"/>
+<wire x1="25.2758" y1="0.49368125" x2="27.8798" y2="3.1307" width="0.1524" layer="16"/>
 <wire x1="26.4459" y1="9.4269" x2="26.8839" y2="9.4269" width="0.1524" layer="1"/>
 <wire x1="26.8839" y1="9.4269" x2="34.457" y2="17" width="0.1524" layer="1"/>
 <wire x1="34.457" y1="17" x2="34.457" y2="18.41" width="0.1524" layer="1"/>
@@ -1043,12 +1043,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.3949" y1="13.3516" x2="17.3949" y2="10.4436" width="0.1524" layer="1"/>
 <wire x1="17.3949" y1="10.4436" x2="16.4103" y2="9.459" width="0.1524" layer="1"/>
 <wire x1="16.4103" y1="9.459" x2="15.9023" y2="9.459" width="0.1524" layer="1"/>
-<wire x1="17.8875" y1="13.659" x2="17.7023" y2="13.659" width="0.1524" layer="1"/>
-<wire x1="17.7023" y1="13.659" x2="17.3949" y2="13.3516" width="0.1524" layer="1"/>
-<wire x1="17.8875" y1="13.659" x2="17.8875" y2="16.0546" width="0.1524" layer="1"/>
 <wire x1="17.8875" y1="16.0546" x2="17.6656" y2="16.2765" width="0.1524" layer="1"/>
 <wire x1="17.6656" y1="16.2765" x2="14.7881" y2="16.2765" width="0.1524" layer="1"/>
-<wire x1="18.1949" y1="13.3516" x2="17.8875" y2="13.659" width="0.1524" layer="1"/>
 <wire x1="14.9302" y1="19.1624" x2="14.7881" y2="19.0203" width="0.1524" layer="1"/>
 <wire x1="14.7881" y1="19.0203" x2="14.7881" y2="16.2765" width="0.1524" layer="1"/>
 <wire x1="14.9302" y1="19.1624" x2="13.7529" y2="20.3397" width="0.1524" layer="1"/>
@@ -1316,13 +1312,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="6.9587" y1="17.8043" x2="9.5485" y2="17.8043" width="0.1524" layer="1"/>
 <wire x1="9.5485" y1="17.8043" x2="9.5594" y2="17.7934" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$1">
-<wire x1="17.907" y1="0.4826" x2="20.447" y2="0.4826" width="0.1524" layer="16"/>
-</signal>
 </signals>
-<errors>
-<approved hash="19,16,fce478cdd020e15b"/>
-</errors>
 </board>
 </drawing>
 </eagle>
