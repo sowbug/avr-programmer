@@ -6,7 +6,7 @@ By [Mike Tsao](http://www.sowbug.com/) and [Dennis Gentry](https://github.com/dg
 Introduction
 ============
 
-This is a new spin on the AVR ISP. It's based on the ATmegaU2 family of AVR devices. Influences while designing, in no particular order:
+This is a new spin on the AVR ISP. It's based on the ATmega 'u2 family of AVR devices. Influences while designing, in no particular order:
 
   * Adafruit's [USBtinyISP](http://www.ladyada.net/make/usbtinyisp/), based on [the original USBtiny project](http://dicks.home.xs4all.nl/avr/usbtiny/). In particular, the buffer came from this project.
   * Fabio Baltieri's [USB Key AVR Programmer](http://fabiobaltieri.com/2011/09/02/usb-key-avr-programmer/). Some early schematic ideas came from here.
@@ -20,12 +20,13 @@ Design Goals
   1. No special cables needed. In the common case of a standard 6-pin ISP header on the target board, the programmer needs only a commodity mini-B USB cable. The target audience is DIY people who are designing their own circuits, and in that case it's very unlikely new designs would use a 10-pin ISP header with 4 NC pins.
   1. It should be a real USB device rather than emulating serial over USB, so it needs fewer avrdude options to pass in.
   1. Jumpers should be truly optional. The device should be usable without jumper header pins even soldered onto the board.
-  1. Support in current versions of avrdude. With the real-USB-device requirement, this narrows it down to USBasp or USBtiny emulation.
+  1. Support in current versions of avrdude. With the real-USB-device requirement, this narrows it down to USBasp, USBtiny, or AVRISP mkII emulation.
   1. Inexpensive. To be clear, most AVR programmers are inexpensive, and it's not a goal to be less expensive than them.
   1. Distinctive. The angled 6-pin socket satisfies this goal.
   1. Fast. This should be entirely dependent on the quality of the firmware, because the device itself should be capable of high-speed USB.
   1. Good-looking enough to be presentable without a case.
   1. JTAG/XSVF programming via [The JTAG Whisperer](https://github.com/sowbug/JTAGWhisperer). This means we need to support varying target voltages.
+  1. Support for all low-voltage programming methods (serial, TPI, PDI).
   1. (Not in 1.0.1) Bring out the serial pins on the ATmega to provide a USB-to-TTL converter like FTDI breakout boards.
 
 FAQ
