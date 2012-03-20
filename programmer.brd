@@ -6,22 +6,22 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.001" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -128,33 +128,39 @@
 <wire x1="35.306" y1="20.8026" x2="34.036" y2="22.0726" width="0" layer="20" curve="90"/>
 <wire x1="34.036" y1="22.0726" x2="1.27" y2="22.0726" width="0" layer="20"/>
 <wire x1="1.27" y1="22.0726" x2="0" y2="20.8026" width="0" layer="20" curve="90"/>
-<text x="19.6342" y="15.3924" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-center">sowbug.com</text>
-<text x="14.7574" y="8.9408" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">MISO 1</text>
-<text x="13.4874" y="8.9408" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">2 VCC</text>
-<text x="14.7574" y="6.4008" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">SCK 3</text>
-<text x="13.4874" y="6.4008" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">4 MOSI</text>
-<text x="14.7574" y="3.8608" size="1.778" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-right">RST 5</text>
-<text x="13.4874" y="3.8608" size="1.778" layer="22" font="vector" ratio="18" rot="MR0">6 GND</text>
+<text x="19.6342" y="15.3924" size="1.9304" layer="22" font="vector" ratio="18" rot="MR0" align="bottom-center">sowbug.com</text>
+<text x="14.7574" y="11.4808" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">MISO 1</text>
+<text x="13.4874" y="11.4808" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">2 VCC</text>
+<text x="14.7574" y="8.9408" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">SCK 3</text>
+<text x="13.4874" y="8.9408" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">4 MOSI</text>
+<text x="14.7574" y="6.4008" size="1.778" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-right">RST 5</text>
+<text x="13.4874" y="6.4008" size="1.778" layer="22" font="vector" ratio="15" rot="MR0">6 GND</text>
 <circle x="34.2646" y="5.8674" radius="0.127" width="0.6096" layer="21"/>
 <wire x1="24.3459" y1="23.5204" x2="38.6334" y2="23.5204" width="0.254" layer="21"/>
 <wire x1="38.6334" y1="23.5204" x2="38.6334" y2="14.9733" width="0.254" layer="21"/>
 <wire x1="38.6334" y1="14.9733" x2="24.3459" y2="14.9733" width="0.254" layer="21" style="longdash"/>
 <wire x1="24.3459" y1="14.9733" x2="24.3459" y2="23.5204" width="0.254" layer="21"/>
-<text x="17.399" y="21.3106" size="0.6" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">VCC</text>
-<text x="22.4536" y="21.3106" size="0.6" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">GND</text>
-<text x="19.9136" y="21.3106" size="0.6" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">3V3</text>
-<text x="10.7696" y="0.6604" size="0.6" layer="21" font="vector" ratio="18" rot="R90">VCC</text>
-<text x="16.0528" y="3.9624" size="0.6" layer="21" font="vector" ratio="18" rot="R180">GND</text>
-<text x="18.1356" y="3.8608" size="0.6" layer="21" font="vector" ratio="18" rot="R180">TCK</text>
-<text x="20.574" y="3.81" size="0.6" layer="21" font="vector" ratio="18" rot="R180">TDO</text>
-<text x="23.0378" y="3.8354" size="0.6" layer="21" font="vector" ratio="18" rot="R180">TDI</text>
-<text x="25.7048" y="3.8354" size="0.6" layer="21" font="vector" ratio="18" rot="R180">TMS</text>
-<text x="28.7274" y="8.9408" size="0.4064" layer="21" font="vector" ratio="18">74AHC125</text>
+<text x="17.399" y="21.5392" size="0.8128" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">VCC</text>
+<text x="22.606" y="21.5392" size="0.8128" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">GND</text>
+<text x="19.9136" y="21.5392" size="0.8128" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">3V3</text>
+<text x="10.8966" y="1.27" size="1.016" layer="21" font="vector" ratio="18" rot="R180">VCC</text>
+<text x="15.8242" y="3.7338" size="0.8128" layer="21" font="vector" ratio="18" rot="R180">GND</text>
+<text x="18.3388" y="3.9878" size="0.8128" layer="21" font="vector" ratio="18" rot="R180">TCK</text>
+<text x="20.9042" y="4.0132" size="0.8128" layer="21" font="vector" ratio="18" rot="R180">TDO</text>
+<text x="23.3934" y="3.9878" size="0.8128" layer="21" font="vector" ratio="18" rot="R180">TDI</text>
+<text x="26.3906" y="4.0132" size="0.8128" layer="21" font="vector" ratio="18" rot="R180">TMS</text>
+<text x="27.8638" y="8.9662" size="0.6096" layer="21" font="vector" ratio="18">74AHC125</text>
 <text x="18.5674" y="1.3208" size="1.016" layer="22" font="vector" rot="MR0">v1.0.1</text>
-<text x="12.3952" y="21.336" size="0.6" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">GND</text>
-<text x="14.9352" y="21.3106" size="0.6" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">5V</text>
+<text x="12.3952" y="21.5392" size="0.8128" layer="21" font="vector" ratio="15" rot="R180" align="bottom-center">GND</text>
+<text x="14.9352" y="21.5392" size="0.8128" layer="21" font="vector" ratio="18" rot="R180" align="bottom-center">5V</text>
 <circle x="0.635" y="17.8562" radius="0.127" width="0.6096" layer="21"/>
 <circle x="26.9494" y="17.9832" radius="0.127" width="0.6096" layer="21"/>
+<text x="25.5016" y="5.5626" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">TMS</text>
+<text x="22.9616" y="5.334" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">TDI</text>
+<text x="20.32" y="5.715" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">TDO</text>
+<text x="17.78" y="5.715" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">TCK</text>
+<text x="15.24" y="5.715" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">GND</text>
+<text x="12.7" y="5.715" size="1.016" layer="22" font="vector" ratio="10" rot="MR270">VCC</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -762,15 +768,15 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="C1" library="SparkFun" package="0805" value="22 pF" x="9.8366" y="10.7045" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.4937" y="13.2699" size="0.6" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="8.4396" y="12.7365" size="0.6" layer="27" font="vector" rot="R270"/>
+<attribute name="VALUE" x="8.4396" y="12.7365" size="0.8128" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C2" library="SparkFun" package="0805" value="22 pF" x="10.1099" y="6.9257" smashed="yes" rot="R270">
 <attribute name="NAME" x="9.0812" y="9.1609" size="0.6" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="8.7129" y="8.0179" size="0.6" layer="27" font="vector" rot="R270"/>
+<attribute name="VALUE" x="8.7129" y="8.0179" size="0.8128" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C3" library="SparkFun" package="0805" value="0.1 uF" x="8.2035" y="15.133" smashed="yes" rot="R180">
 <attribute name="NAME" x="8.0765" y="13.5709" size="0.6" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="9.7021" y="14.3202" size="0.6" layer="27" font="vector" rot="R180"/>
+<attribute name="VALUE" x="9.7021" y="14.3202" size="0.8128" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="ISP" library="adafruit" package="AVRISP" value="AVRISP-6" x="30.8755" y="19.2485" smashed="yes" rot="R90">
 <attribute name="NAME" x="33.9235" y="16.2005" size="0.6" layer="25" font="vector" rot="R180"/>
@@ -796,7 +802,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="X1" library="adafruit" package="NX8045" value="16MHz" x="12.8847" y="10.5604" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.1447" y="11.3554" size="0.6" layer="25" font="vector" ratio="18" rot="R270"/>
-<attribute name="VALUE" x="12.1597" y="11.8554" size="0.6" layer="27" font="vector" ratio="18" rot="R270"/>
+<attribute name="VALUE" x="12.3121" y="12.4904" size="0.8128" layer="27" font="vector" ratio="18" rot="R270"/>
 </element>
 <element name="D1" library="adafruit" package="1206" value="LED" x="13.1574" y="4.3787" smashed="yes">
 <attribute name="NAME" x="10.8968" y="5.3439" size="0.6" layer="25" font="vector"/>
@@ -807,12 +813,12 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="9.8557" y="1.4245" size="0.6" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="SJ1" library="jumper" package="SJ" value="VCC-5V" x="3.3101" y="11.9974" smashed="yes" rot="MR270">
-<attribute name="NAME" x="2.1671" y="14.9184" size="0.6" layer="26" font="vector" ratio="10" rot="MR270"/>
-<attribute name="VALUE" x="5.1897" y="13.5785" size="0.6" layer="28" font="vector" rot="MR270"/>
+<attribute name="NAME" x="3.4371" y="9.8384" size="0.6" layer="26" font="vector" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="2.0147" y="14.2135" size="0.8128" layer="28" font="vector" rot="MR270"/>
 </element>
 <element name="C5" library="SparkFun" package="EIA3216" value="10 uF" x="3.2891" y="14.8347" smashed="yes" rot="R180">
 <attribute name="NAME" x="5.4989" y="13.2505" size="0.6" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="3.7193" y="13.3249" size="0.6" layer="27" font="vector" rot="R180"/>
+<attribute name="VALUE" x="3.7193" y="13.3249" size="0.8128" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="ISP-SELF" library="adafruit" package="AVRISP" value="AVRISP-6" x="4.4187" y="19.0743" smashed="yes" rot="R90">
 <attribute name="NAME" x="10.1845" y="16.5851" size="0.6" layer="25" font="vector" rot="R180"/>
