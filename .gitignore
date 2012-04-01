@@ -6,3 +6,4 @@
 *.xln
 *.pro
 eagle.epf
+.DS_Store

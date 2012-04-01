@@ -1,2 +1,2 @@
 clean :
-	rm -f *.b#? *.s#? *~
+	rm -f *.b#? *.s#? *.l#? *.pro *~
