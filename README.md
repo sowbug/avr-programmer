@@ -26,8 +26,8 @@ Design Goals
   1. Fast. This should be entirely dependent on the quality of the firmware, because the device itself should be capable of high-speed USB.
   1. Good-looking enough to be presentable without a case.
   1. JTAG/XSVF programming via [The JTAG Whisperer](https://github.com/sowbug/JTAGWhisperer). This means we need to support varying target voltages.
-  1. Support for all low-voltage programming methods (serial, TPI, PDI).
-  1. (Not in 1.0.1) Bring out the serial pins on the ATmega to provide a USB-to-TTL converter like FTDI breakout boards.
+  1. Bring out the serial pins on the ATmega to provide a USB-to-TTL converter with an FTDI-cable-compatible pinout.
+  1. Support for all low-voltage programming methods (SPI, TPI, PDI). Note that TPI/PDI turned out to be hard to do with the serial functionality. It should work, but with external resistors and a breadboard.
 
 FAQ
 ===
