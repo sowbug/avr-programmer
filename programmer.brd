@@ -970,6 +970,24 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="10.3967" y1="14.1272" x2="10.3967" y2="13.97" width="0.1524" layer="1"/>
 <wire x1="37.338" y1="2.54" x2="37.283846875" y2="2.521946875" width="0.1524" layer="1"/>
 <wire x1="37.338" y1="2.54" x2="37.2838" y2="2.5219" width="0.1524" layer="1"/>
+<polygon width="0.1524" layer="16" isolate="0.254">
+<vertex x="-1.27" y="19.05"/>
+<vertex x="44.45" y="19.05"/>
+<vertex x="44.45" y="-1.27"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
+<wire x1="17.018" y1="6.604" x2="17.018" y2="6.6804" width="0.1524" layer="16"/>
+<wire x1="17.018" y1="6.604" x2="17.018" y2="6.6804" width="0.1524" layer="16"/>
+<wire x1="13.462" y1="6.604" x2="13.462" y2="6.631296875" width="0.1524" layer="16"/>
+<wire x1="13.462" y1="6.604" x2="13.462" y2="6.631296875" width="0.1524" layer="16"/>
+<wire x1="6.35" y1="15.24" x2="6.35" y2="15.239996875" width="0.1524" layer="16"/>
+<wire x1="6.35" y1="15.24" x2="6.35" y2="15.239996875" width="0.1524" layer="16"/>
+<polygon width="0.1524" layer="1" isolate="0.254">
+<vertex x="-1.27" y="19.05"/>
+<vertex x="44.45" y="19.05"/>
+<vertex x="44.45" y="-1.27"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
 </signal>
 <signal name="D+RAW">
 <contactref element="R3" pad="1"/>
@@ -1533,28 +1551,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="29.448" y1="5.6646" x2="30.1767" y2="5.6646" width="0.1524" layer="1"/>
 <wire x1="31.9278" y1="1.27" x2="30.1767" y2="3.0211" width="0.1524" layer="1"/>
 <wire x1="30.1767" y1="3.0211" x2="30.1767" y2="5.6646" width="0.1524" layer="1"/>
-</signal>
-<signal name="N$1">
-<polygon width="0.1524" layer="1" isolate="0.254">
-<vertex x="-1.27" y="19.05"/>
-<vertex x="44.45" y="19.05"/>
-<vertex x="44.45" y="-1.27"/>
-<vertex x="-1.27" y="-1.27"/>
-</polygon>
-</signal>
-<signal name="N$2">
-<polygon width="0.1524" layer="16" isolate="0.254">
-<vertex x="-1.27" y="19.05"/>
-<vertex x="44.45" y="19.05"/>
-<vertex x="44.45" y="-1.27"/>
-<vertex x="-1.27" y="-1.27"/>
-</polygon>
-<wire x1="17.018" y1="6.604" x2="17.018" y2="6.6804" width="0.1524" layer="16"/>
-<wire x1="17.018" y1="6.604" x2="17.018" y2="6.6804" width="0.1524" layer="16"/>
-<wire x1="13.462" y1="6.604" x2="13.462" y2="6.631296875" width="0.1524" layer="16"/>
-<wire x1="13.462" y1="6.604" x2="13.462" y2="6.631296875" width="0.1524" layer="16"/>
-<wire x1="6.35" y1="15.24" x2="6.35" y2="15.239996875" width="0.1524" layer="16"/>
-<wire x1="6.35" y1="15.24" x2="6.35" y2="15.239996875" width="0.1524" layer="16"/>
 </signal>
 </signals>
 </board>
