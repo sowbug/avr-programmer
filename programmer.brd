@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -923,14 +923,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="41.91" y1="16.51" x2="40.6401" y2="15.2401" width="0.3048" layer="1"/>
 <wire x1="40.6401" y1="15.2401" x2="40.6401" y2="11.5601" width="0.3048" layer="1"/>
 <wire x1="40.6401" y1="11.5601" x2="39.24" y2="10.16" width="0.3048" layer="1"/>
-<polygon width="0.1524" layer="16">
+<polygon width="0.3048" layer="16">
 <vertex x="-1.27" y="19.05"/>
 <vertex x="44.45" y="19.05"/>
 <vertex x="44.45" y="2.54"/>
 <vertex x="40.64" y="-1.27"/>
 <vertex x="-1.27" y="-1.27"/>
 </polygon>
-<polygon width="0.1524" layer="1">
+<polygon width="0.3048" layer="1">
 <vertex x="-1.27" y="19.05"/>
 <vertex x="44.45" y="19.05"/>
 <vertex x="44.45" y="2.54"/>
@@ -941,7 +941,7 @@ Please make sure your boards conform to these design rules.</description>
 <via x="32.385" y="5.715" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="29.21" y="13.97" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <via x="24.13" y="13.97" extent="1-16" drill="0.3302" diameter="0.6858"/>
-<via x="33.655" y="4.445" extent="1-16" drill="0.3302" diameter="0.6858"/>
+<via x="33.655" y="4.191" extent="1-16" drill="0.3302" diameter="0.6858"/>
 </signal>
 <signal name="D+RAW">
 <contactref element="R3" pad="1"/>
