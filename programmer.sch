@@ -5351,7 +5351,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="pwr/gnd" width="0" drill="0">
+<class number="1" name="pwr/gnd" width="0.3048" drill="0">
 </class>
 </classes>
 <parts>
