@@ -5445,7 +5445,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U1" gate="G$1" x="43.18" y="93.98"/>
 <instance part="C1" gate="G$1" x="-27.94" y="63.5" rot="R270"/>
 <instance part="C2" gate="G$1" x="-27.94" y="50.8" rot="R270"/>
-<instance part="C3" gate="G$1" x="-27.94" y="88.9"/>
+<instance part="C3" gate="G$1" x="-27.94" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="-24.13" y="91.059" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="-20.574" y="85.979" size="1.778" layer="96" rot="R180"/>
+</instance>
 <instance part="GND2" gate="1" x="-22.86" y="76.2"/>
 <instance part="GND3" gate="1" x="-33.02" y="43.18"/>
 <instance part="GND5" gate="1" x="0" y="-27.94"/>
@@ -5571,13 +5574,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="-17.78" y1="81.28" x2="-17.78" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-27.94" y1="93.98" x2="-27.94" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="81.28" x2="-22.86" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="-22.86" y1="81.28" x2="-17.78" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="81.28" x2="-22.86" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-22.86" y="81.28"/>
+<pinref part="C3" gate="G$1" pin="1"/>
+<wire x1="-27.94" y1="81.28" x2="-27.94" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP3" gate="G$1" pin="6"/>
@@ -5728,8 +5731,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="-17.78" y1="96.52" x2="-17.78" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="86.36" x2="-27.94" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-27.94" y1="96.52" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="96.52" x2="-17.78" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-22.86" y1="99.06" x2="-22.86" y2="96.52" width="0.1524" layer="91"/>
@@ -5738,6 +5739,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-27.94" y1="96.52" x2="-38.1" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="96.52" x2="-38.1" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="SJ1" gate="1" pin="1"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-27.94" y1="96.52" x2="-27.94" y2="91.44" width="0.1524" layer="91"/>
 <junction x="-27.94" y="96.52"/>
 </segment>
 <segment>
