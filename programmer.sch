@@ -5441,6 +5441,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="7.62" y1="55.88" x2="7.62" y2="139.7" width="0.1524" layer="97"/>
 <text x="10.16" y="132.08" size="5.08" layer="97" font="vector">ATmegaXXU2</text>
 <text x="15.24" y="-27.94" size="1.778" layer="97" font="vector">Micro USB connector might not exist in real life</text>
+<text x="109.22" y="38.1" size="1.778" layer="97" font="vector">Substitute 74AHC244</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="43.18" y="93.98"/>
