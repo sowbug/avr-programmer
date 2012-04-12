@@ -183,7 +183,7 @@ if (project.board) project.board(B) {
     }
   }; 
   if (Result==1){
-    string fileName1=workdir+"\\"+SourceFname;      
+    string fileName1=workdir+"/"+SourceFname;      
     if (dphtml==1) { 
       counter=0;
       fileName1+=".htm"; 
@@ -242,7 +242,7 @@ if (project.board) project.board(B) {
     }
     if(dpwiki==1) {
       counter=0;
-      fileName1=workdir+"\\"+SourceFname;
+      fileName1=workdir+"/"+SourceFname;
       fileName1+=".wik"; 
       output(fileName1) {
 	printf("{| class=\"wikitable\" border=\"1\"\n");
@@ -314,7 +314,7 @@ if (project.board) project.board(B) {
 	EXPORT IMAGE project.brd.png 150
     */
     if(dpSchPng==1) {
-      fileName2=workdir+"\\"+SourceFname;
+      fileName2=workdir+"/"+SourceFname;
       temp="";
       sprintf(temp,"edit .sch;\n");
       cmds+=temp;
@@ -324,7 +324,7 @@ if (project.board) project.board(B) {
                         
     }
     if(dpBoardPng==1) {
-      fileName2=workdir+"\\"+SourceFname;
+      fileName2=workdir+"/"+SourceFname;
                         
       sprintf(temp,"BOARD;\n");
       cmds+= temp;
