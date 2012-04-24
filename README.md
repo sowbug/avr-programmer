@@ -29,6 +29,11 @@ Design Goals
   1. Bring out the serial pins on the ATmega to provide a USB-to-TTL converter with an FTDI-cable-compatible pinout.
   1. Support for all low-voltage programming methods (SPI, TPI, PDI). Note that TPI/PDI turned out to be hard to do with the serial functionality. It should work, but with external resistors and a breadboard.
 
+Notes That Will Someday Become Documentation
+============================================
+
+* Fuses are **-U lfuse:w:0xDE:m -U hfuse:w:0xD9:m -U efuse:w:0xF7:m -U lock:w:0xFF:m**. These are default with 16MHz crystal and HWBE=0.
+
 FAQ
 ===
 
