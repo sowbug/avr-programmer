@@ -5370,7 +5370,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P+5" library="SparkFun" deviceset="3.3V" device=""/>
 <part name="FRAME1" library="frames" deviceset="FRAME_A_L" device="" value="SHEET1"/>
 <part name="GND6" library="SparkFun" deviceset="GND" device=""/>
-<part name="R1" library="programmer" deviceset="SPARKFUN_RESISTOR" device="0805-RES" value="1K"/>
+<part name="R1" library="programmer" deviceset="SPARKFUN_RESISTOR" device="0805-RES" value="330"/>
 <part name="C5" library="programmer" deviceset="SPARKFUN_CAP_POL" device="1206" value="10 uF"/>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
 <part name="U$1" library="SparkFun" deviceset="5V" device=""/>
@@ -5379,7 +5379,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="ISP-RA" library="programmer" deviceset="SPARKFUN_AVR_SPI_PRG_6" device="2X3_LOCK" value=""/>
 <part name="ISP-SELF" library="programmer" deviceset="SPARKFUN_AVR_SPI_PRG_6" device="2X3_LOCK" value=""/>
 <part name="X2" library="programmer" deviceset="SPARKFUN_USB" device="-MICROB"/>
-<part name="SJ1" library="programmer" deviceset="SPARKFUN_SOLDERJUMPER" device="NC" value="VCC-5V"/>
+<part name="SJ1" library="programmer" deviceset="SPARKFUN_SOLDERJUMPER" device="NC" value="VIO-5V"/>
 <part name="JP2" library="programmer" deviceset="SPARKFUN_M06" device="LOCK" value="JTAG"/>
 <part name="JP3" library="programmer" deviceset="SPARKFUN_M06" device="LOCK" value="TTL-SERIAL"/>
 <part name="Y1" library="programmer" deviceset="SPARKFUN_CRYSTAL" device="5X3" value="16MHz"/>
@@ -5390,6 +5390,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="JP5" library="programmer" deviceset="M02" device="LOCK" value="BONUS"/>
 <part name="SJ2" library="programmer" deviceset="SPARKFUN_SOLDERJUMPER" device="NO" value="BOOT"/>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
+<part name="R4" library="programmer" deviceset="SPARKFUN_RESISTOR" device="0805-RES" value="330"/>
+<part name="U$2" library="SparkFun" deviceset="5V" device=""/>
+<part name="LED2" library="programmer" deviceset="SPARKFUN_LED" device="" value="ACTIVITY"/>
 </parts>
 <sheets>
 <sheet>
@@ -5399,11 +5402,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="5.08" y1="109.22" x2="-60.96" y2="109.22" width="0.1524" layer="97"/>
 <wire x1="-60.96" y1="109.22" x2="-60.96" y2="139.7" width="0.1524" layer="97"/>
 <text x="-58.42" y="132.08" size="5.08" layer="97" font="vector">USB</text>
-<wire x1="5.08" y1="-35.56" x2="-60.96" y2="-35.56" width="0.1524" layer="97"/>
-<wire x1="-60.96" y1="-35.56" x2="-60.96" y2="12.7" width="0.1524" layer="97"/>
-<wire x1="-60.96" y1="12.7" x2="5.08" y2="12.7" width="0.1524" layer="97"/>
-<wire x1="5.08" y1="12.7" x2="5.08" y2="-35.56" width="0.1524" layer="97"/>
-<text x="-58.42" y="5.08" size="5.08" layer="97" font="vector">ISP</text>
+<wire x1="5.08" y1="-43.18" x2="-60.96" y2="-43.18" width="0.1524" layer="97"/>
+<wire x1="-60.96" y1="-43.18" x2="-60.96" y2="5.08" width="0.1524" layer="97"/>
+<wire x1="-60.96" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="97"/>
+<wire x1="5.08" y1="5.08" x2="5.08" y2="-43.18" width="0.1524" layer="97"/>
+<text x="-58.42" y="-2.54" size="5.08" layer="97" font="vector">ISP</text>
 <wire x1="99.06" y1="139.7" x2="99.06" y2="88.9" width="0.1524" layer="97"/>
 <wire x1="99.06" y1="88.9" x2="167.64" y2="88.9" width="0.1524" layer="97"/>
 <wire x1="167.64" y1="88.9" x2="167.64" y2="139.7" width="0.1524" layer="97"/>
@@ -5415,15 +5418,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-60.96" y1="71.12" x2="-60.96" y2="106.68" width="0.1524" layer="97"/>
 <text x="-58.42" y="99.06" size="5.08" layer="97" font="vector">VCC</text>
 <wire x1="-60.96" y1="68.58" x2="5.08" y2="68.58" width="0.1524" layer="97"/>
-<wire x1="5.08" y1="68.58" x2="5.08" y2="38.1" width="0.1524" layer="97"/>
-<wire x1="5.08" y1="38.1" x2="-60.96" y2="38.1" width="0.1524" layer="97"/>
-<wire x1="-60.96" y1="38.1" x2="-60.96" y2="68.58" width="0.1524" layer="97"/>
+<wire x1="5.08" y1="68.58" x2="5.08" y2="39.37" width="0.1524" layer="97"/>
+<wire x1="5.08" y1="39.37" x2="-60.96" y2="39.37" width="0.1524" layer="97"/>
+<wire x1="-60.96" y1="39.37" x2="-60.96" y2="68.58" width="0.1524" layer="97"/>
 <text x="-58.42" y="60.96" size="5.08" layer="97" font="vector">XTAL</text>
-<wire x1="5.08" y1="15.24" x2="5.08" y2="35.56" width="0.1524" layer="97"/>
-<wire x1="5.08" y1="35.56" x2="-60.96" y2="35.56" width="0.1524" layer="97"/>
-<wire x1="-60.96" y1="35.56" x2="-60.96" y2="15.24" width="0.1524" layer="97"/>
-<wire x1="-60.96" y1="15.24" x2="5.08" y2="15.24" width="0.1524" layer="97"/>
-<text x="-58.42" y="27.94" size="5.08" layer="97" font="vector">LED</text>
+<wire x1="5.08" y1="6.35" x2="5.08" y2="37.846" width="0.1524" layer="97"/>
+<wire x1="5.08" y1="37.846" x2="-60.96" y2="37.846" width="0.1524" layer="97"/>
+<wire x1="-60.96" y1="37.846" x2="-60.96" y2="6.35" width="0.1524" layer="97"/>
+<wire x1="-60.96" y1="6.35" x2="5.08" y2="6.35" width="0.1524" layer="97"/>
+<text x="-58.42" y="30.48" size="5.08" layer="97" font="vector">LED</text>
 <text x="101.6" y="-33.02" size="2.54" layer="94" font="vector">An AVR in-system programmer.</text>
 <wire x1="99.06" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="97"/>
 <wire x1="167.64" y1="86.36" x2="167.64" y2="5.08" width="0.1524" layer="97"/>
@@ -5450,8 +5453,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="C3" gate="G$1" x="-27.94" y="88.9"/>
 <instance part="GND2" gate="1" x="-22.86" y="76.2"/>
 <instance part="GND3" gate="1" x="-33.02" y="43.18"/>
-<instance part="GND5" gate="1" x="0" y="-27.94"/>
-<instance part="P+1" gate="1" x="-2.54" y="0"/>
+<instance part="GND5" gate="1" x="0" y="-35.56"/>
+<instance part="P+1" gate="1" x="-2.54" y="-7.62"/>
 <instance part="R3" gate="G$1" x="-40.64" y="127" rot="R180"/>
 <instance part="R2" gate="G$1" x="-30.48" y="121.92" rot="R180"/>
 <instance part="C4" gate="G$1" x="-5.08" y="91.44" rot="MR180"/>
@@ -5459,13 +5462,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="FRAME1" gate="G$1" x="-73.66" y="-63.5"/>
 <instance part="FRAME1" gate="G$2" x="99.06" y="-63.5"/>
 <instance part="GND6" gate="1" x="-12.7" y="114.3"/>
-<instance part="R1" gate="G$1" x="-20.32" y="22.86" rot="R180"/>
+<instance part="R1" gate="G$1" x="-17.78" y="25.4" rot="R180"/>
 <instance part="C5" gate="G$1" x="-17.78" y="91.44"/>
 <instance part="GND1" gate="1" x="-5.08" y="78.74"/>
 <instance part="U$1" gate="G$1" x="-22.86" y="99.06"/>
-<instance part="U$3" gate="G$1" x="-27.94" y="27.94"/>
-<instance part="ISP" gate="G$1" x="-27.94" y="-5.08"/>
-<instance part="ISP-RA" gate="G$1" x="-27.94" y="-20.32"/>
+<instance part="U$3" gate="G$1" x="-25.4" y="30.48"/>
+<instance part="ISP" gate="G$1" x="-27.94" y="-12.7"/>
+<instance part="ISP-RA" gate="G$1" x="-27.94" y="-27.94"/>
 <instance part="ISP-SELF" gate="G$1" x="127" y="116.84"/>
 <instance part="X2" gate="G$1" x="-7.62" y="119.38"/>
 <instance part="SJ1" gate="1" x="-38.1" y="86.36" rot="R270"/>
@@ -5475,11 +5478,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="JP1" gate="G$1" x="86.36" y="33.02" rot="R180"/>
 <instance part="IC1" gate="A" x="132.08" y="55.88"/>
 <instance part="IC1" gate="B" x="132.08" y="22.86"/>
-<instance part="LED1" gate="G$1" x="-10.16" y="22.86" rot="R90"/>
+<instance part="LED1" gate="G$1" x="-7.62" y="25.4" rot="R90"/>
 <instance part="JP4" gate="G$1" x="48.26" y="35.56" rot="R180"/>
 <instance part="JP5" gate="G$1" x="48.26" y="17.78" rot="R180"/>
 <instance part="SJ2" gate="1" x="129.54" y="104.14"/>
 <instance part="GND4" gate="1" x="116.84" y="96.52"/>
+<instance part="R4" gate="G$1" x="-48.26" y="12.7" rot="R180"/>
+<instance part="U$2" gate="G$1" x="-55.88" y="17.78"/>
+<instance part="LED2" gate="G$1" x="-38.1" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -5494,13 +5500,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="VCC"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-2.54" x2="-17.78" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-10.16" x2="-17.78" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="2"/>
 <pinref part="ISP-RA" gate="G$1" pin="2"/>
-<wire x1="-17.78" y1="-17.78" x2="-2.54" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-2.54" width="0.1524" layer="91"/>
-<junction x="-2.54" y="-2.54"/>
+<wire x1="-17.78" y1="-25.4" x2="-2.54" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-25.4" x2="-2.54" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-10.16"/>
 </segment>
 <segment>
 <wire x1="78.74" y1="33.02" x2="71.12" y2="33.02" width="0.1524" layer="91"/>
@@ -5557,13 +5563,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="0" y1="-25.4" x2="0" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="0" y1="-22.86" x2="-17.78" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="0" y1="-33.02" x2="0" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="0" y1="-30.48" x2="-17.78" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="ISP-RA" gate="G$1" pin="6"/>
-<wire x1="-17.78" y1="-7.62" x2="0" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="-15.24" x2="0" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="ISP" gate="G$1" pin="6"/>
-<wire x1="0" y1="-7.62" x2="0" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="0" y="-22.86"/>
+<wire x1="0" y1="-15.24" x2="0" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="0" y="-30.48"/>
 </segment>
 <segment>
 <wire x1="40.64" y1="0" x2="20.32" y2="0" width="0.1524" layer="91"/>
@@ -5634,13 +5640,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="SCK/TCK-B" class="0">
 <segment>
-<wire x1="-35.56" y1="-5.08" x2="-55.88" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-55.88" y="-5.08" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-12.7" x2="-55.88" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-55.88" y="-12.7" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP" gate="G$1" pin="3"/>
 </segment>
 <segment>
-<wire x1="-35.56" y1="-20.32" x2="-55.88" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-55.88" y="-20.32" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-27.94" x2="-55.88" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-55.88" y="-27.94" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP-RA" gate="G$1" pin="3"/>
 </segment>
 <segment>
@@ -5744,8 +5750,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-27.94" y1="27.94" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
-<wire x1="-27.94" y1="22.86" x2="-25.4" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="30.48" x2="-25.4" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="5V"/>
 </segment>
 <segment>
@@ -5758,16 +5764,22 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="144.78" y="119.38" size="1.778" layer="95" font="vector"/>
 <pinref part="ISP-SELF" gate="G$1" pin="2"/>
 </segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-55.88" y1="17.78" x2="-55.88" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="12.7" x2="-53.34" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="5V"/>
+</segment>
 </net>
 <net name="RST/TMS/DTR-B" class="0">
 <segment>
-<wire x1="-35.56" y1="-7.62" x2="-55.88" y2="-7.62" width="0.1524" layer="91"/>
-<label x="-55.88" y="-7.62" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-15.24" x2="-55.88" y2="-15.24" width="0.1524" layer="91"/>
+<label x="-55.88" y="-15.24" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP" gate="G$1" pin="5"/>
 </segment>
 <segment>
-<wire x1="-35.56" y1="-22.86" x2="-55.88" y2="-22.86" width="0.1524" layer="91"/>
-<label x="-55.88" y="-22.86" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-30.48" x2="-55.88" y2="-30.48" width="0.1524" layer="91"/>
+<label x="-55.88" y="-30.48" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP-RA" gate="G$1" pin="5"/>
 </segment>
 <segment>
@@ -5788,13 +5800,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="MISO/TDO" class="0">
 <segment>
-<wire x1="-35.56" y1="-17.78" x2="-55.88" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-55.88" y="-17.78" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-25.4" x2="-55.88" y2="-25.4" width="0.1524" layer="91"/>
+<label x="-55.88" y="-25.4" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP-RA" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<wire x1="-35.56" y1="-2.54" x2="-55.88" y2="-2.54" width="0.1524" layer="91"/>
-<label x="-55.88" y="-2.54" size="1.6764" layer="95" font="vector"/>
+<wire x1="-35.56" y1="-10.16" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
+<label x="-55.88" y="-10.16" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP" gate="G$1" pin="1"/>
 </segment>
 <segment>
@@ -5815,13 +5827,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="MOSI/TDI-B" class="0">
 <segment>
-<wire x1="-17.78" y1="-5.08" x2="-7.62" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-12.7" y="-5.08" size="1.6764" layer="95" font="vector"/>
+<wire x1="-17.78" y1="-12.7" x2="-7.62" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-12.7" y="-12.7" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP" gate="G$1" pin="4"/>
 </segment>
 <segment>
-<wire x1="-17.78" y1="-20.32" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
-<label x="-12.7" y="-20.32" size="1.6764" layer="95" font="vector"/>
+<wire x1="-17.78" y1="-27.94" x2="-2.54" y2="-27.94" width="0.1524" layer="91"/>
+<label x="-12.7" y="-27.94" size="1.6764" layer="95" font="vector"/>
 <pinref part="ISP-RA" gate="G$1" pin="4"/>
 </segment>
 <segment>
@@ -5838,7 +5850,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <net name="VCC-LED" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="-15.24" y1="22.86" x2="-12.7" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 </segment>
 </net>
@@ -5854,10 +5866,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="IC1" gate="A" pin="A2"/>
 </segment>
 </net>
-<net name="ACTIVITY" class="0">
+<net name="ACT0" class="0">
 <segment>
-<wire x1="0" y1="22.86" x2="-5.08" y2="22.86" width="0.1524" layer="91"/>
-<label x="0" y="22.86" size="1.6764" layer="95" font="vector" rot="R90"/>
+<wire x1="2.54" y1="25.4" x2="-2.54" y2="25.4" width="0.1524" layer="91"/>
+<label x="2.54" y="25.4" size="1.6764" layer="95" font="vector" rot="R90"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 </segment>
 <segment>
@@ -6090,6 +6102,25 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="40.64" y1="15.24" x2="25.4" y2="15.24" width="0.1524" layer="91"/>
 <label x="25.4" y="15.24" size="1.6764" layer="95" font="vector"/>
 <pinref part="JP5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="VCC-LED1" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="-43.18" y1="12.7" x2="-40.64" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="ACT1" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="PD0"/>
+<wire x1="63.5" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<label x="71.12" y="83.82" size="1.778" layer="95" font="vector"/>
+</segment>
+<segment>
+<wire x1="-27.94" y1="12.7" x2="-33.02" y2="12.7" width="0.1524" layer="91"/>
+<label x="-27.94" y="12.7" size="1.6764" layer="95" font="vector" rot="R90"/>
+<pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
