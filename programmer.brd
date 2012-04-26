@@ -817,6 +817,7 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="R4" library="programmer" package="SPARKFUN_0805" value="330" x="1.27" y="-13.97"/>
 <element name="LED2" library="programmer" package="CHIP-LED0805" value="ACTIVITY" x="2.54" y="-8.89"/>
+<element name="SJ3" library="programmer" package="SPARKFUN_SJ_2S" value="VIO-3V3" x="1.27" y="-17.78"/>
 </elements>
 <signals>
 <signal name="VCC" class="1">
@@ -852,6 +853,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="20.2264" y1="17.6197" x2="20.32" y2="17.526" width="0.3048" layer="16"/>
 <wire x1="41.402" y1="8.128" x2="41.38395" y2="8.14605" width="0.3048" layer="16"/>
 <wire x1="41.402" y1="8.128" x2="41.3839" y2="8.1461" width="0.3048" layer="16"/>
+<contactref element="SJ3" pad="2"/>
+<wire x1="6.1216" y1="1.3714" x2="1.6819" y2="-17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="GND" class="1">
 <contactref element="C1" pad="2"/>
@@ -996,6 +999,8 @@ Please make sure your boards conform to these design rules.</description>
 <via x="21.8523" y="10.4487" extent="1-16" drill="0.3302" diameter="0.6858"/>
 <wire x1="7.62" y1="2.667" x2="8.152" y2="2.667" width="0.2032" layer="1"/>
 <wire x1="8.152" y1="2.667" x2="9.3817" y2="3.8967" width="0.2032" layer="1"/>
+<contactref element="SJ3" pad="1"/>
+<wire x1="7.62" y1="2.667" x2="0.8581" y2="-17.78" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="D-RAW">
 <contactref element="R2" pad="1"/>
