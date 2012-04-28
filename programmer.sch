@@ -3053,18 +3053,6 @@ You may notice that each hole has been shifted either up or down by 0.005 of an 
 <text x="-1.27" y="4.445" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="MOUNTAIN-MS-100625">
-<wire x1="-2.35" y1="1.75" x2="2.35" y2="1.75" width="0.127" layer="21"/>
-<wire x1="2.35" y1="1.75" x2="2.35" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="2.35" y1="-1.75" x2="-2.35" y2="-1.75" width="0.127" layer="21"/>
-<wire x1="-2.35" y1="-1.75" x2="-2.35" y2="1.75" width="0.127" layer="21"/>
-<smd name="P$1" x="-2.35" y="0.9" dx="1.45" dy="1" layer="1"/>
-<smd name="P$2" x="-2.35" y="-0.9" dx="1.45" dy="1" layer="1"/>
-<smd name="P$3" x="2.35" y="0.9" dx="1.45" dy="1" layer="1"/>
-<smd name="P$4" x="2.35" y="-0.9" dx="1.45" dy="1" layer="1"/>
-<text x="-2" y="2" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-2" y="-2" size="1.27" layer="27" font="vector" align="top-left">&gt;VALUE</text>
-</package>
 <package name="FCI_MICRO_USB_8193">
 <wire x1="4" y1="-1.45" x2="-4" y2="-1.45" width="0.127" layer="21"/>
 <smd name="VBUS" x="-1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
@@ -3083,6 +3071,17 @@ You may notice that each hole has been shifted either up or down by 0.005 of an 
 <wire x1="4" y1="3.35" x2="4" y2="-1.45" width="0.127" layer="21"/>
 <pad name="P$1" x="-3.3" y="0" drill="0.9"/>
 <pad name="P$2" x="3.3" y="0" drill="0.9"/>
+</package>
+<package name="BUTTON_TD-85XU">
+<smd name="PAD1" x="-2.05" y="0" dx="0.9" dy="1.7" layer="1"/>
+<smd name="PAD2" x="2.05" y="0" dx="0.9" dy="1.7" layer="1"/>
+<wire x1="-1.95" y1="1.45" x2="1.95" y2="1.45" width="0.127" layer="21"/>
+<wire x1="1.95" y1="1.45" x2="1.95" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="1.95" y1="-1.45" x2="-1.95" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-1.45" x2="-1.95" y2="1.45" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.9" width="0.127" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -3322,25 +3321,6 @@ You may notice that each hole has been shifted either up or down by 0.005 of an 
 <text x="8.89" y="3.048" size="1.27" layer="94">+5</text>
 <text x="8.89" y="-2.032" size="1.27" layer="94">GND</text>
 </symbol>
-<symbol name="MOM_NO_SWITCH">
-<pin name="1" x="-12.7" y="2.54" length="middle" direction="pas"/>
-<pin name="2" x="-12.7" y="-2.54" length="middle" direction="pas"/>
-<pin name="3" x="12.7" y="2.54" length="middle" direction="pas" rot="R180"/>
-<pin name="4" x="12.7" y="-2.54" length="middle" direction="pas" rot="R180"/>
-<wire x1="-7.62" y1="2.54" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="2.54" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-2.54" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="0" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.778" y2="1.524" width="0.254" layer="94"/>
-<text x="-7.62" y="7.62" size="1.778" layer="125">&gt;NAME</text>
-<text x="-7.62" y="-10.16" size="1.778" layer="125">&gt;VALUE</text>
-</symbol>
 <symbol name="FCI_8193_MICRO_USB">
 <description>FCI Micro USB Type B 10118193</description>
 <wire x1="2.794" y1="5.08" x2="-2.286" y2="5.08" width="0.254" layer="94"/>
@@ -3351,6 +3331,11 @@ You may notice that each hole has been shifted either up or down by 0.005 of an 
 <pin name="GND" x="-4.826" y="-3.81" visible="pad" length="short"/>
 <pin name="VBUS" x="-4.826" y="-1.27" visible="pad" length="short"/>
 <text x="1.524" y="-3.81" size="2.54" layer="94" rot="R90">USB</text>
+</symbol>
+<symbol name="BUTTON_TD-85XU">
+<pin name="P$1" x="-7.62" y="0" length="middle" direction="pas"/>
+<pin name="P$2" x="7.62" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="1.27" y1="2.286" x2="-2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4855,24 +4840,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOUNTAIN-MS-100625">
-<gates>
-<gate name="G$1" symbol="MOM_NO_SWITCH" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MOUNTAIN-MS-100625">
-<connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="FCI_8193_MICRO_USB">
 <gates>
 <gate name="G$1" symbol="FCI_8193_MICRO_USB" x="0" y="0"/>
@@ -4884,6 +4851,22 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON_TD-85XU">
+<gates>
+<gate name="G$1" symbol="BUTTON_TD-85XU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BUTTON_TD-85XU">
+<connects>
+<connect gate="G$1" pin="P$1" pad="PAD1"/>
+<connect gate="G$1" pin="P$2" pad="PAD2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4943,9 +4926,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$2" library="SparkFun" deviceset="5V" device=""/>
 <part name="LED2" library="programmer" deviceset="SPARKFUN_LED" device="" value="ACTIVITY"/>
 <part name="SJ3" library="programmer" deviceset="SPARKFUN_SOLDERJUMPER" device="NC" value="VIO-3V3"/>
-<part name="U$4" library="programmer" deviceset="MOUNTAIN-MS-100625" device=""/>
 <part name="GND7" library="SparkFun" deviceset="GND" device=""/>
 <part name="X1" library="programmer" deviceset="FCI_8193_MICRO_USB" device=""/>
+<part name="SW1" library="programmer" deviceset="BUTTON_TD-85XU" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5044,9 +5027,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U$2" gate="G$1" x="-55.88" y="17.78"/>
 <instance part="LED2" gate="G$1" x="-38.1" y="12.7" rot="R90"/>
 <instance part="SJ3" gate="1" x="-10.16" y="83.82" rot="R270"/>
-<instance part="U$4" gate="G$1" x="134.62" y="-7.62"/>
-<instance part="GND7" gate="1" x="154.94" y="-17.78"/>
+<instance part="GND7" gate="1" x="152.4" y="-17.78"/>
 <instance part="X1" gate="G$1" x="-5.334" y="123.19"/>
+<instance part="SW1" gate="G$1" x="144.78" y="-5.08"/>
 </instances>
 <busses>
 </busses>
@@ -5168,17 +5151,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="154.94" y1="-15.24" x2="154.94" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="4"/>
-<wire x1="154.94" y1="-12.7" x2="154.94" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-10.16" x2="147.32" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="-12.7" x2="144.78" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-12.7" x2="144.78" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="154.94" y="-12.7"/>
-<wire x1="144.78" y1="-15.24" x2="119.38" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-15.24" x2="119.38" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="2"/>
-<wire x1="119.38" y1="-10.16" x2="121.92" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-15.24" x2="152.4" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="-12.7" x2="152.4" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="SW1" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="D+RAW" class="0">
@@ -5712,17 +5687,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="MODE" class="0">
 <segment>
-<pinref part="U$4" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="-5.08" x2="119.38" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-5.08" x2="119.38" y2="0" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="0" x2="154.94" y2="0" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="0" x2="154.94" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="3"/>
-<wire x1="154.94" y1="-5.08" x2="147.32" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="154.94" y1="0" x2="154.94" y2="5.08" width="0.1524" layer="91"/>
-<junction x="154.94" y="0"/>
-<wire x1="154.94" y1="5.08" x2="139.7" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="0" x2="137.16" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="0" x2="137.16" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
 <label x="139.7" y="5.08" size="1.778" layer="95" font="vector"/>
+<pinref part="SW1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="PD1"/>

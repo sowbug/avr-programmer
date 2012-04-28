@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.1" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3348,6 +3348,17 @@ chip</description>
 <pad name="P$1" x="-3.3" y="0" drill="0.9"/>
 <pad name="P$2" x="3.3" y="0" drill="0.9"/>
 </package>
+<package name="BUTTON_TD-85XU">
+<smd name="PAD1" x="-2.05" y="0" dx="0.9" dy="1.7" layer="1"/>
+<smd name="PAD2" x="2.05" y="0" dx="0.9" dy="1.7" layer="1"/>
+<wire x1="-1.95" y1="1.45" x2="1.95" y2="1.45" width="0.127" layer="21"/>
+<wire x1="1.95" y1="1.45" x2="1.95" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="1.95" y1="-1.45" x2="-1.95" y2="-1.45" width="0.127" layer="21"/>
+<wire x1="-1.95" y1="-1.45" x2="-1.95" y2="1.45" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="0.9" width="0.127" layer="21"/>
+<text x="-2" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="-2" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SPARKFUN_3.3V">
@@ -3690,6 +3701,11 @@ chip</description>
 <pin name="GND" x="-4.826" y="-3.81" visible="pad" length="short"/>
 <pin name="VBUS" x="-4.826" y="-1.27" visible="pad" length="short"/>
 <text x="1.524" y="-3.81" size="2.54" layer="94" rot="R90">USB</text>
+</symbol>
+<symbol name="BUTTON_TD-85XU">
+<pin name="P$1" x="-7.62" y="0" length="middle" direction="pas"/>
+<pin name="P$2" x="7.62" y="0" length="middle" direction="pas" rot="R180"/>
+<wire x1="1.27" y1="2.286" x2="-2.54" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -5516,6 +5532,22 @@ Standard SMD solder jumper. Used to automate production. Two varients : Normally
 <connect gate="G$1" pin="D-" pad="D-"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BUTTON_TD-85XU">
+<gates>
+<gate name="G$1" symbol="BUTTON_TD-85XU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BUTTON_TD-85XU">
+<connects>
+<connect gate="G$1" pin="P$1" pad="PAD1"/>
+<connect gate="G$1" pin="P$2" pad="PAD2"/>
 </connects>
 <technologies>
 <technology name=""/>
