@@ -3074,8 +3074,8 @@ You may notice that each hole has been shifted either up or down by 0.005 of an 
 <smd name="GND" x="1.3" y="2.675" dx="0.4" dy="1.35" layer="1"/>
 <hole x="-3.3" y="0" drill="0.9"/>
 <hole x="3.3" y="0" drill="0.9"/>
-<smd name="MNT1" x="-3.2" y="2.7" dx="1.6" dy="1.4" layer="1"/>
-<smd name="MNT2" x="3.2" y="2.7" dx="1.6" dy="1.4" layer="1"/>
+<smd name="MNT1" x="-3.2" y="2.5" dx="1.6" dy="1.4" layer="1"/>
+<smd name="MNT2" x="3.2" y="2.5" dx="1.6" dy="1.4" layer="1"/>
 <smd name="MNT3" x="-1.075" y="0" dx="1.9" dy="1.6" layer="1"/>
 <smd name="MNT4" x="1.075" y="0" dx="1.9" dy="1.6" layer="1"/>
 <text x="-4" y="4" size="1.27" layer="25" font="vector">&gt;NAME</text>
